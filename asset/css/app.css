@@ -1,0 +1,76 @@
+body {
+	background: #0f0c29;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(left, #24243e, #302b63, #0f0c29);
+	background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
+	background: linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: Roboto;
+}
+
+h2 {
+	color: rgb(123,230,123);
+}
+
+.fa-plus {
+	float: right;
+}
+
+.container {
+	width: 400px;
+	margin: 100px auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+li {
+	height: 40px;
+	line-height: 40px;
+	color: rgb(230,230,12);
+}
+
+li:nth-child(2n) {
+	background: rgba(123,123,123,0.5);
+}
+
+span {
+	background: #e74c3c;
+	height: 40px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	width: 0; 
+	opacity: 0;
+	transition: 0.2s linear;
+}
+
+.right {
+	position: absolute;
+	right: 0px;
+}
+
+li:hover span{
+	width: 35px;
+	opacity: 1;
+}
+
+input {
+	width: 100%;
+	font-size: 18px;
+	padding: 10px 10px 10px 15px;
+	outline: none;
+	/*box-sizing: border-box; <-- This isn't really required for our code*/
+}
+
+input:focus {
+	/*border: 1px solid black;*/
+	/*Coz it's not really required though.*/
+}
+
+.completed {
+	text-decoration: line-through;
+	color: gray;
+}

@@ -24,6 +24,10 @@ $("ul").on("click", "span.left", function(event) {
 
 $("ul").on("click", "span.right", function(event) {
 	var newVal = prompt("Enter the edited text!");
-	$(this).parent().html("<li><span class='left'><i class='fa fa-trash'></i></span>  "+newVal+"<span class='right'><i class='fa fa-pencil'></li>");
+	if(newVal === "") {
+		event.stopPropagation();
+		return;
+	}
+	$(this).parent().html("<span class='left'><i class='fa fa-trash'></i></span>  "+newVal+"<span class='right'><i class='fa fa-pencil'>");
 	event.stopPropagation();
 });

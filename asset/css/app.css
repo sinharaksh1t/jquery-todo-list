@@ -6,6 +6,11 @@ body {
 	font-family: Roboto;
 }
 
+h3 {
+	text-align: center;
+	color: #CFD60A;
+}
+
 h2 {
 	color: rgb(123,230,123);
 }

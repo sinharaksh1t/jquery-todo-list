@@ -41,7 +41,7 @@ li:nth-child(2n) {
 	background: rgba(123,123,123,0.5);
 }
 
-span {
+.left {
 	background: #e74c3c;
 	height: 40px;
 	text-align: center;
@@ -53,6 +53,14 @@ span {
 }
 
 .right {
+	background: #e74c3c;
+	height: 40px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	width: 0; 
+	opacity: 0;
+	transition: 0.2s linear;
 	position: absolute;
 	right: 0px;
 }
@@ -62,12 +70,18 @@ li:hover span{
 	opacity: 1;
 }
 
-input {
+.todoinput {
 	width: 100%;
 	font-size: 18px;
 	padding: 10px 10px 10px 15px;
 	outline: none;
 	/*box-sizing: border-box; <-- This isn't really required for our code*/
+}
+
+.editinput {
+	height: 100%;
+	width: 100%;
+	outline: none;
 }
 
 input:focus {
